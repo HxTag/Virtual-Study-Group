@@ -3,3 +3,34 @@ uploads/
 
 # Ignore environment variable files
 .env
+
+
+# Ignore configuration files with credentials
+config/config.php
+
+# Ignore uploaded files
+uploads/*
+
+# Ignore MinIO configuration if stored separately
+minio.config
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+logs/
+
+# Ignore composer dependencies
+/vendor/
+
+# Ignore node modules if using any
+node_modules/

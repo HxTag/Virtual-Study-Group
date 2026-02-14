@@ -1,0 +1,28 @@
+<?php
+// Database Configuration Template
+// Copy this file to config.php and update with your actual credentials
+
+// Database settings
+define('DB_HOST', 'localhost');
+define('DB_NAME', 'your_database_name');
+define('DB_USER', 'your_database_username');
+define('DB_PASS', 'your_database_password');
+
+// MinIO Configuration
+define('MINIO_ENDPOINT', 'localhost:9000');
+define('MINIO_ACCESS_KEY', 'your_minio_access_key');
+define('MINIO_SECRET_KEY', 'your_minio_secret_key');
+define('MINIO_BUCKET', 'studygroup');
+define('MINIO_USE_SSL', false);
+
+// WebSocket Configuration
+define('WEBSOCKET_HOST', 'localhost');
+define('WEBSOCKET_PORT', 8080);
+
+// Application Settings
+define('APP_URL', 'http://localhost/VirtualStudyGroup');
+define('UPLOAD_MAX_SIZE', 10485760); // 10MB in bytes
+
+// Session Settings
+define('SESSION_LIFETIME', 3600); // 1 hour in seconds
+?>

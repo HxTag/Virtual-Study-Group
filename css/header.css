@@ -1,0 +1,93 @@
+/* General Header Styling */
+header {
+    background: linear-gradient(90deg, #64c468, #2db1bb);
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+/* Link Sections Styling (Shared for Left and Right) */
+header .left-links,
+header .right-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header .left-links a,
+header .right-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Hover and Active Effects for Links */
+header .left-links a:hover,
+header .right-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #e0e0e0;
+    border-color: white;
+}
+
+header .left-links a:active,
+header .right-links a:active {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #d0d0d0;
+}
+
+/* Welcome Message Styling */
+header .welcome-message {
+    font-size: 1rem;
+    color: #f9f9f9;
+}
+
+/* Profile Picture Styling */
+header .profile-link {
+    display: flex;
+    align-items: center;
+}
+
+header .profile-picture {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid white;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+header .profile-picture:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    header .left-links,
+    header .right-links {
+        justify-content: center;
+    }
+}

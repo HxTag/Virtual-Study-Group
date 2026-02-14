@@ -1,0 +1,14 @@
+{
+    "name": "virtualstudygroup/chat",
+    "description": "Virtual Study Group Chat Server",
+    "type": "project",
+    "require": {
+        "php": ">=7.4",
+        "cboden/ratchet": "^0.4.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "VirtualStudyGroup\\": "src/"
+        }
+    }
+} 

@@ -32,5 +32,9 @@ logs/
 # Ignore composer dependencies
 /vendor/
 
+
+# Local-only credentials and editor history
+config.php
+.history/
 # Ignore node modules if using any
 node_modules/
